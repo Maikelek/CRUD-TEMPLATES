@@ -1,0 +1,175 @@
+* {
+  background-color: gray;
+}
+
+.App {
+  height: 100v;
+  padding: 0px 100px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat > h1 {
+  color: white;
+}
+
+.cats {
+  display: flex;
+  gap: 10px;
+}
+
+.cat {
+  border: solid black 2px;
+  background-color: white;
+  overflow-x: scroll;
+
+  padding: 15px;
+  flex:1;
+  margin: 20px;
+  width: 150px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cat > h2 {
+  background-color: white;
+  text-decoration: overline underline;
+  padding: 3px;
+}
+
+.cat > p {
+  background-color: white;
+  font-size: 19px;
+}
+
+.remove {
+  border: none;
+  height: 50px;
+  width: 100px;
+
+  cursor: pointer;
+  background-color: rgb(43, 38, 38);
+
+  color: red;
+  border-top: solid red 3px;
+  border-bottom: solid red 3px
+}
+
+.update {
+  border: none;
+  height: 50px;
+  width: 100px;
+
+  background-color: rgb(43, 38, 38);
+
+  color: rgb(0, 238, 79);
+  border-top: solid rgb(0, 238, 79) 3px;
+  border-bottom: solid rgb(0, 238, 79) 3px
+}
+
+.update > a {
+  color: rgb(0, 238, 79);
+  background-color: transparent;
+}
+
+
+.addButton {
+  border: none;
+  height: 100px;
+  width: 150px;
+
+  background-color: rgb(43, 38, 38);
+
+  border-top: solid rgb(0, 190, 238) 3px;
+  border-bottom: solid rgb(0, 190, 238) 3px;
+}
+
+.addButton > a {
+  color: rgb(0, 190, 238);
+  background-color: transparent;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  background-color: black;
+
+  cursor: pointer;
+}
+
+/*------------------*/
+
+.updateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: white;
+
+  border: solid black 2px;
+  padding: 10%;
+}
+
+.updateForm > h1 {
+  background-color: transparent;
+  
+
+}
+
+.updateForm > button {
+    
+    border: 2px solid black;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    margin-top: 1rem;
+    padding: 0.4rem;
+
+    color: white;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.updateForm > button:hover {
+    
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+}
+
+input {
+  background: transparent;
+  color: black;
+  padding: 1rem 1.2rem;
+  margin-bottom: 10px;
+
+  border: solid black 1px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+
+input:focus {
+  background-color: gray;
+  color: white
+}
+
+input:focus::placeholder {
+  color: white;
+}
+
+input:hover {
+  background-color: gray;
+  transition: all 0.4s ease-in-out;
+}
+
+input:hover::placeholder {
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
